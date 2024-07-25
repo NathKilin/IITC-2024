@@ -196,7 +196,7 @@ console.log('String and Number Conversion')
 function convert_to_upperCase_and_add_age(firstName, age){
     upper_name = firstName.toUpperCase()
     age_string = age.toString()
-    return upper_name+''+age_string;
+    return upper_name+string(age_string);
 }
 console.log(convert_to_upperCase_and_add_age(firstName, age))
 ////////////////////////////////////////////////////
