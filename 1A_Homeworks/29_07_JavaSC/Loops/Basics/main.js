@@ -176,3 +176,37 @@ console.log(sum)
 
 console.log('')
 console.log('Exercise 26')
+for (let i = 0; i <= 3; i++){
+    console.log("*".repeat(i))}
+console.log('')
+
+console.log('')
+console.log('Exercise 27')
+for (let i = 1; i <= 3; i++){
+    console.log("*".repeat(3))}
+
+console.log('')
+console.log('Exercise 28')
+for (i = 1; i <= 3; i++){
+    line = ''
+    for (j = 1; j <= i; j++){
+        line += j
+    }
+    console.log(line)
+}
+
+console.log('')
+console.log('Exercise 29')
+for (i = 1; i < 11; i++){
+    console.log(`4 X ${i} = ${i * 4}`)
+}
+
+console.log('')
+console.log('Exercise 28')
+for (i = 1; i <= 3; i++){
+    line = ''
+    for (j = 1; j <= i; j++){
+        line += i
+    }
+    console.log(line)
+}
