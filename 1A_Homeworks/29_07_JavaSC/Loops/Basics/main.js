@@ -125,6 +125,54 @@ for (i = 0; i <3; i++){
 
 console.log('')
 console.log('Exercise 21')
+rslt = 0
 for (i = 1; i < 6; i++){
-    console.log(i+=)
+    rslt += i
+    console.log(i)
 }
+console.log(rslt)
+
+console.log('')
+console.log('Exercise 22')
+let product = 1
+for (i = 1; i < 6; i++)
+{
+    product *= i
+    console.log(`${i} X`)}
+console.log(product)
+
+console.log('')
+console.log('Exercise 23')
+let evenNumber = 0
+list0 = [1, 2, 3, 4, 5, 6, 7, 8]
+for (i = 0; i < 8; i++){
+    console.log(list0[i])
+    if (list0[i] % 2 === 0){
+        evenNumber += list0[i]
+    }
+}
+console.log(`The sum of every even number on the list is ${evenNumber}`)
+
+console.log('')
+console.log('Exercise 24') 
+let list1 = [10, 5, 8, 12, 3]
+let biggerNum = 0
+for (i = 0; i < 5; i++){
+    console.log(list1[i])
+    if (list1[i] >= biggerNum){
+        biggerNum = list1[i]
+    }
+}
+console.log(`the bigger number is ${biggerNum}`)
+
+console.log('')
+console.log('Exercise 25')
+let sum = 0
+for (i = 0; i < 11; i++){
+    if  (i % 2 === 0){
+        sum += i}
+}
+console.log(sum)
+
+console.log('')
+console.log('Exercise 26')
