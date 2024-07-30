@@ -135,3 +135,36 @@ console.log(emptyArray)
 
 console.log('')
 console.log('Exercise 26')
+fruits.unshift('mango')
+console.log(fruits)
+
+console.log('')
+console.log('Exercise 27')
+console.log(numbers)
+numbers.shift()
+console.log(numbers)
+
+console.log('')
+console.log('Exercise 28')
+numbers.unshift(0, 1)
+console.log(numbers)
+
+console.log('')
+console.log('Exercise 29')
+console.log(emptyArray)
+for (i = 1; i < 6; i++){
+    emptyArray.unshift(i)
+}
+console.log(emptyArray)
+
+console.log('')
+console.log('Exercise 30')
+for (i = emptyArray.length-1; i >=1; i--){
+    console.log(`removing ${[i]}`)
+    emptyArray.shift(emptyArray[i])
+    console.log(emptyArray)
+}
+console.log(emptyArray)
+
+console.log('')
+console.log('Exercise 31')
