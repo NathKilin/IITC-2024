@@ -168,3 +168,33 @@ console.log(emptyArray)
 
 console.log('')
 console.log('Exercise 31')
+console.log(colors.indexOf("GREEN"))
+
+console.log('')
+console.log('Exercise 32')
+console.log(seasons.indexOf("winter"))
+
+console.log('')
+console.log('Exercise 33')
+colors.push('red')
+console.log(colors.indexOf('red'))
+
+console.log('')
+console.log('Exercise 34')
+arrayWithDuplicates = [2,3,2,4]
+console.log(arrayWithDuplicates)
+console.log(arrayWithDuplicates.indexOf(2), arrayWithDuplicates.lastIndexOf(2))
+
+console.log('')
+console.log('Exercise 35')
+checkNumber = 8
+console.log(`Let´s check if ${checkNumber} is in our array: ${arrayWithDuplicates}`)
+if (arrayWithDuplicates.indexOf(checkNumber) === -1){
+    console.log(false)}
+    else {console.log(true)}
+
+console.log('')
+console.log('Exercise 36')
+console.log(fruits.includes('apple'))
+
+
