@@ -208,3 +208,24 @@ secondHalf = colors.slice(middleOfArray, colors.length-1)
 console.log(`Let´s check if "blue" is part of the second half of this array`)
 console.log(colors)
 console.log(`Answer: ${secondHalf.includes('blue')}`)
+
+console.log('')
+console.log('Exercise 39')
+value = "mango"
+console.log(`Let´s check if ${value} is part of fruits`)
+console.log(fruits)
+function fruitsincludes(fruits, value){
+    return fruits.includes(value)
+}
+console.log(fruitsincludes(fruits, value));
+
+
+console.log('')
+console.log('Exercise 40')
+value = 2
+console.log(`Let´s check if ${value} is part of numbers`)
+console.log(numbers)
+if (numbers.includes(value)){
+    console.log('Yep')
+}
+else{console.log('Nop')};
