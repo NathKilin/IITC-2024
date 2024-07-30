@@ -96,5 +96,42 @@ console.log(seasons)
 tempVariable = seasons[0]
 seasons[0] = seasons[seasons.length-1]
 seasons[seasons.length-1] = tempVariable;
-
 console.log(seasons)
+
+console.log('')
+console.log('Exercise 21')
+fruits.push('orange')
+console.log(fruits)
+
+console.log('')
+console.log('Exercise 22')
+console.log(numbers)
+removedNumber = numbers[numbers.length-1]
+numbers.pop()
+console.log('-',removedNumber)
+console.log(numbers)
+
+console.log('')
+console.log('Exercise 23')
+console.log(colors)
+colors.push('white', 'purple', 'black')
+console.log(colors)
+
+console.log('')
+console.log('Exercise 24')
+emptyArray = []
+for (i = 1; i < 6; i++){
+    emptyArray.push(i)
+}
+console.log(emptyArray)
+
+console.log('')
+console.log('Exercise 25')
+for (i = emptyArray.length-1; i >= 0; i--){
+    console.log('removing', emptyArray[i])
+    emptyArray.pop(i)
+}
+console.log(emptyArray)
+
+console.log('')
+console.log('Exercise 26')
