@@ -81,4 +81,39 @@ for (let i = 0; i < input.length; i++) {
     }
 }
 
-console.log(frequency);
+console.log( frequency);
+
+console.log('')
+console.log('EXERCISE 9')
+let newArray = []
+function convertingTo_1D(originalArray){
+  for (let i = 0; i < originalArray.length; i ++){
+    //console.log(originalArray[i])
+    for (let j = 0; j <= originalArray[i].length-1; j ++){
+      //console.log(originalArray[j])
+      //console.log(originalArray[i][j])
+      newArray.push(originalArray[i][j])
+    }
+  }
+  console.log('new array: ', newArray);
+}
+convertingTo_1D([[1, 2], [3, 4], [5, 6]])
+//////////////////////////////////////////////////
+
+console.log('');
+console.log('Exercise 10');
+let myMatrix = [[1, 2, 3], [4, 5, 6]]
+let columns = []
+let lines = []
+function transposing(anyMatrix){
+  for (i = 0; i < myMatrix.length; i++){
+    lines.push(myMatrix[i])
+    for (j = 0; j < myMatrix[i].length-1; j++){
+      columns+= j
+      columns.push(myMatrix[j]);
+    }    
+  }
+  //console.log(`lines ${lines}, columns ${columns}`)
+
+}
+transposing(myMatrix)
