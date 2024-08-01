@@ -34,18 +34,31 @@ for (i = 1; i <= 3; i++){
 console.log('');
 console.log('EXERCISE 4');
 function addingIndices(n){
-count = 1
+count = 0
     for (i = 0; i < 3; i++){
         line = ''
-        count --
+        
         for (j = 0; j < 3; j++){
             line += count + ' '
             count++
         }
-        count --
+        count -= 2
         console.log(line)
     }
         
 }
 addingIndices(4)
+
+//////////////////////////////////
+console.log('')
+console.log('EXERCISE 5');
+for (i = 1; i <= 3; i++){
+    let line = ''
+    for (j = 1; j <= 3; j++){
+        line += j*i + ' '
+    }
+    console.log(line);
+    
+}
+
 
