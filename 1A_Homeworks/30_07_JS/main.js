@@ -66,22 +66,48 @@ let arr = [[1,2],[3,4],[5,6]]
 
 console.log('')
 console.log('EXERCISE 8')
+console.log('My resolution')
 
-let input = 'hello';
-let ourBox = []; 
+let input = 'akdfmfvpavdmam';
 let frequency = {};
 for (let i = 0; i < input.length; i++) {
     let char = input[i];
-    ourBox.push(char);
-
-    if (frequency[char]) {
-        frequency[char]++; 
+    if (frequency[char]) { // key h
+        frequency[char] += 1;  // value 1
+        console.log(`frequency of ${char} in "${input}": ${frequency[char]}`)
     } else {
-        frequency[char] = 1;  
+        frequency[char] = 1; 
+        console.log(`frequency of ${char} in "${input}: ${frequency[char]}`)
     }
 }
 
-console.log( frequency);
+console.log('')
+console.log('Fitousse resolution')
+function countFreq (str){
+  let freqObject = {}
+  for (let i = 0; i < str.length; i++){
+    //console.log('scanning letter  *' + str[i] + '* ');
+    if (!freqObject[str[i]]){
+      for(let j = 0; j < str.length; j++){
+        //console.log(`scanning letter ${str[i]} on ${str[j]}`)
+        if (str[i] === str[j]){
+          if (!freqObject[str[i]]){
+            freqObject[str[i]] = 1
+          }
+          else {
+            freqObject[str[i]]++
+          }}
+        
+
+    }
+    }
+  }
+  console.log(freqObject)
+}
+countFreq('hello')
+
+////////////////////////////////
+//console.log( frequency);
 
 console.log('')
 console.log('EXERCISE 9')
