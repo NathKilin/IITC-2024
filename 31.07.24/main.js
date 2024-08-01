@@ -87,7 +87,7 @@ let guy = {
     Age: 39,
     isFather: true,
     greeting: function(){
-        return`My name is${this.name}`
+        console.log(`My name is${this.name}`)
     }
 }
-console.log(guy, guy.greeting)
+guy.greeting()
