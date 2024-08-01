@@ -28,3 +28,17 @@ function counting_10(m){
     console.log(list_10)
 }
 counting_10(11)
+
+console.log('');
+console.log('EXERCISE 4');
+let listEven = '';
+
+function countingEven(o) {
+    for (let i = 1; i <= o; i++) {
+        if (i % 2 === 0) {
+            listEven += i + "... ";           }
+    }
+    console.log(listEven);
+}
+
+countingEven(10);
