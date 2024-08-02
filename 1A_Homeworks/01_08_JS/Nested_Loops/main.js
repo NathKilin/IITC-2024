@@ -107,6 +107,16 @@ for (i = 1; i <= 3; i++){
 /////////////////////////////////////
 console.log('');
 console.log('EXERCISE 10');
-
+let counter0 = 1
+for (i = 0; i < 3; i++){
+    let line = ''
+    for (j = 0; j < 3; j++){
+        line += ((i+j) % 2) + " "
+    }
+    console.log(line); 
+}
+/////////////////////////////////////
+console.log('');
+console.log('');
 
 
