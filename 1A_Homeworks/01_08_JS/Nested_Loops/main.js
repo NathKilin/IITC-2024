@@ -70,5 +70,43 @@ for (i = 1; i <= 3; i++){
     }console.log(row)
 }
 ////////////////////////////////////
+console.log('')
+console.log('EXERCISE 7')
+let counter = 1
+for (i = 0; i < 3; i++){
+    let line = ''
+    for (j = 0; j < 3; j++){
+        line += counter + ' '
+        counter++
+    }console.log(line)
+} 
+/////////////////////////////////////
+console.log('');
+console.log('EXERCISE 8');
+let counter2 = 2;
+for (i = 0; i < 3; i++){
+    let line = ''
+    for (j = 0; j < 3; j++){
+        line += counter2 + " "
+        counter2 += 2
+    }
+    console.log(line);
+}
+/////////////////////////////////////
+console.log('');
+console.log('EXERCISE 9');
+let counter3 = 1
+for (i = 1; i <= 3; i++){
+    let line = ''
+    for (j = 1; j <= i; j++){
+        line += counter3 + ' '
+        counter3++
+    }
+    console.log(line);
+}
+/////////////////////////////////////
+console.log('');
+console.log('EXERCISE 10');
+
 
 
