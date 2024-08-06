@@ -1,12 +1,5 @@
 "use strict";
 
-const strings = [
-  "baba",
-  "my success",
-  "no more lives",
-  "and of session",
-  "good discussion",
-];
 /*
 console.log('EXERCISE 1');
 
@@ -230,54 +223,97 @@ console.log("Updated Student:", student_1);
 
 /////////////////////////////////////////////////
 
+/*
 console.log('EXERCISE 10');
 
 // 😥 Task 10: Count Occurrences of a Character 😥
 // TODO: Write a function to count the occurrences of the character 's'
-function countCharacterOccurrences(strings, char) {
-  // your code here
-}
 
+const strings = [
+    "baba",
+    "my success",
+    "no more lives",
+    "and of session",
+    "good discussion",
+  ];
+
+function countCharacterOccurrences(strings, char) {
+    let counting = 0
+    for (let i = 0; i < strings.length; i++){
+         for (let j = 0; j < strings[i].length; j++){
+            if (strings[i][j] === char){
+                counting++
+            }
+         }
+    }
+    return counting
+}
 
 const s_count = countCharacterOccurrences(strings, "s");
 const c_count = countCharacterOccurrences(strings, "c");
-// console.log("Occurrences of 's':", s_count);
-// console.log("Occurrences of 'b':", c_count);
-
+console.log("Occurrences of 's':", s_count);
+console.log("Occurrences of 'b':", c_count);
+*/
 
 /////////////////////////////////////////////////
 
-console.log('EXERCISE 6');
+/*
+console.log('EXERCISE 11');
 
 // 😥 Task 11: Update Product Price by Name 😥
 // TODO: Write a function to update the price of a product by name (You can mutate the original object)
+
+const myProducts = [
+    { name: "Laptop", price: 1000, categories: ["electronics", "computers"] },
+    { name: "Shirt", price: 500, categories: ["clothing"] },
+    { name: "Phone", price: 4200, categories: ["electronics", "gadgets"] },
+  ];
 function updatePriceByName(products, productName, newPrice) {
-  // your code here
+    for (let i = 0; i < products.length; i++){
+        if (products[i].name === productName){
+            products[i].price = newPrice
+        }
+    }
+    return newPrice
 }
 
+updatePriceByName(myProducts, "Phone", 550);
+console.log("Updated Products:", myProducts);
+*/
 
 /////////////////////////////////////////////////
 
-console.log('EXERCISE 6');
+/*
+console.log('EXERCISE 12');
 
 // 😥 Task 12: Get Uppercase Strings 😥
 // TODO: Write a function to get an array of uppercase strings (You should return a new array)
+
+const strings = [
+    "baba",
+    "my success",
+    "no more lives",
+    "and of session",
+    "good discussion",
+  ];
+
 function getUppercaseStrings(strings) {
-  // your code here
+    let newArray = [];
+    for ( let i = 0; i < strings.length; i++){
+        let stringInUpperCase = strings[i].toUpperCase();
+        newArray.push(stringInUpperCase)
+    }
+    return newArray
 }
 
-
 const uppercaseStrings = getUppercaseStrings(strings);
-// console.log("Uppercase Strings:", uppercaseStrings);
-
-
-updatePriceByName(myProducts, "Phone", 550);
-// console.log("Updated Products:", products);
+console.log("Uppercase Strings:", uppercaseStrings);
+*/
 
 
 /////////////////////////////////////////////////
 
-console.log('EXERCISE 6');
+console.log('EXERCISE 13');
 
 // 🥵 Task 13: group strings by spaces occurences 🥵
 // TODO: Write a function to group strings by the number of spaces in the string.
@@ -295,7 +331,7 @@ const groupedStrings_1 = groupStringsBySpaces(strings);
 
 /////////////////////////////////////////////////
 
-console.log('EXERCISE 6');
+console.log('EXERCISE 14');
 
 // 🥵 Task 14: group strings by length 🥵
 //TODO: Write a function to group strings by length.
@@ -313,7 +349,7 @@ const groupedStrings_2 = groupStringsByLength(strings);
 
 /////////////////////////////////////////////////
 
-console.log('EXERCISE 6');
+console.log('EXERCISE 15');
 
 // 🥵 Task 15: Capitalize Strings 🥵
 // TODO: Write a function to capitalize the first letter of each string in the array (You should return a new array)
