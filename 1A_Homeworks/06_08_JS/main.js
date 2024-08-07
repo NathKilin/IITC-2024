@@ -384,18 +384,32 @@ console.log("Grouped Strings By Length:", groupedStrings_2);
 
 /////////////////////////////////////////////////
 
+/*
 console.log('EXERCISE 15');
 
 // 🥵 Task 15: Capitalize Strings 🥵
 // TODO: Write a function to capitalize the first letter of each string in the array (You should return a new array)
 // Bonus: Capitalize the first letter of each word in the string (split by space)
+
+const strings = [
+    "baba",
+    "my success",
+    "no more lives",
+    "and of session",
+    "good discussion",
+];
+
 function capitalizeStrings(strings) {
-  // your code here
+    return strings.map(str => {
+        return str.split(' ').map(word => {
+            return word.charAt(0).toUpperCase() + word.slice(1);
+        }).join(' ');
+    });
 }
 
-
 const capitalizedStrings = capitalizeStrings(strings);
-// console.log("Capitalized Strings:", capitalizedStrings);
+console.log("Capitalized Strings:", capitalizedStrings);
+*/
 
 
 
