@@ -353,21 +353,34 @@ console.log("Grouped Strings By Spaces:", groupedStrings_1);
 
 /////////////////////////////////////////////////
 
+/*
 console.log('EXERCISE 14');
 
 // 🥵 Task 14: group strings by length 🥵
 //TODO: Write a function to group strings by length.
 // The function should return an object where keys are the length of the strings and values are arrays of strings.
 
+const strings = [
+    "baba",
+    "my success",
+    "no more lives",
+    "and of session",
+    "good discussion",
+  ];
 
 function groupStringsByLength(strings) {
-  // your code here
+    let lengthOfCurrentString = 0
+    let objectOfStrings = {}
+    for (let i = 0; i < strings.length; i++){
+        lengthOfCurrentString = strings[i].length
+        objectOfStrings[lengthOfCurrentString] = strings[i]
+    }
+    return objectOfStrings
 }
 
-
 const groupedStrings_2 = groupStringsByLength(strings);
-console.log("Grouped Strings By Length:", groupedStrings);
-
+console.log("Grouped Strings By Length:", groupedStrings_2);
+*/
 
 /////////////////////////////////////////////////
 
