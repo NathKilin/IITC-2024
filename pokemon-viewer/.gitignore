@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependências
+node_modules/
+
+# Build
+dist/
+dist-ssr/
+
+# Arquivos de configuração local
+*.local
+.eslint.config.json
+.env
+.vscode/
+
+# Diretórios e arquivos específicos do editor
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Público gerado
+public/
