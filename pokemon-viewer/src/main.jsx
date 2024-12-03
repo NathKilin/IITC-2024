@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App"; // Importa o componente principal
-import "./App.css"; // Importa estilos globais
+import App from "./App"; 
+import "./App.css"; 
 
-// Conecta o React ao HTML, renderizando o componente principal (App)
+// connect the react to html to rendering App
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />

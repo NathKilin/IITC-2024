@@ -106,7 +106,6 @@ const Home = ({
         )}
       </div>
 
-      {/* Filtro por Tipo */}
       <div className="filter-container">
         <label htmlFor="type-filter">Filter by Type:</label>
         <select
@@ -122,7 +121,6 @@ const Home = ({
         </select>
       </div>
 
-      {/* Estado de Carregamento ou Grid de Pokémon */}
       {loading ? (
         <p>Loading Pokémon...</p>
       ) : (

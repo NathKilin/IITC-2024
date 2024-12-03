@@ -9,8 +9,7 @@ const CardPokemon = ({ pokemon }) => {
   const handleClick = () => {
     navigate("/details", { state: { pokemon } });
   };
-
-  // Obter o tipo principal para definir a cor de fundo
+// getting the type to match color
   const primaryType = pokemon.types[0]?.type.name || "normal";
   const backgroundColor = pokeColor[primaryType] || "#f0f0f0";
 

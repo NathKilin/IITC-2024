@@ -21,7 +21,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-family: 'Press Start 2P', Arial, sans-serif; /* Fonte pixelada */
+  font-family: 'Press Start 2P', Arial, sans-serif; 
 
 }
 
@@ -42,7 +42,7 @@
 .filter-container {
   margin: 20px 0;
   text-align: center;
-    font-family: 'Press Start 2P', Arial, sans-serif; /* Fonte pixelada */
+    font-family: 'Press Start 2P', Arial, sans-serif; 
 
 }
 
@@ -52,7 +52,7 @@
   margin-left: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  font-family: 'Press Start 2P', Arial, sans-serif; /* Fonte pixelada */
+  font-family: 'Press Start 2P', Arial, sans-serif; 
 
 }
 
@@ -68,7 +68,7 @@
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-family: 'Press Start 2P', Arial, sans-serif; /* Fonte pixelada */
+  font-family: 'Press Start 2P', Arial, sans-serif; 
 
 }
 

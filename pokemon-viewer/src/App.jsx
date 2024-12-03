@@ -9,16 +9,20 @@ import "./App.css";
 function App() {
   const [pokemonData, setPokemonData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [currentPage, setCurrentPage] = useState(1); // Página atual
-  const [totalPages] = useState(10); // Total de páginas
-  const itemsPerPage = 100; // Pokémon por página
+  // for current page
+  const [currentPage, setCurrentPage] = useState(1); 
+  // total of pages
+  const [totalPages] = useState(10);
+   // amount of pokemons per page
+  const itemsPerPage = 100; 
 
-  const apiURL = `https://pokeapi.co/api/v2/pokemon?limit=1000`; // URL da API para obter 1000 Pokémon
+  // URL of API for 1000 Pokémons
+  const apiURL = `https://pokeapi.co/api/v2/pokemon?limit=1000`; 
 
   useEffect(() => {
     async function fetchData() {
       let response = await getAllPokemon(apiURL);
-      // Obter os Pokémon da página atual
+      // Get pokemons of this page
       const pageData = response.results.slice(
         (currentPage - 1) * itemsPerPage,
         currentPage * itemsPerPage
@@ -29,7 +33,7 @@ function App() {
     fetchData();
   }, [currentPage]);
 
-  // Carregar detalhes dos Pokémon
+  // load pokemon details
   const loadPokemon = async (data) => {
     let _pokemonData = await Promise.all(
       data.map(async (pokemon) => {

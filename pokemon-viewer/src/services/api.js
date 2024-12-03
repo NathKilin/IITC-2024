@@ -1,11 +1,11 @@
-// Funções para chamadas à API
+// call functions to api
 
-// Obter detalhes de um Pokémon
+// get pokemons details
 export function getPokemon({ url }) {
     return fetch(url).then((res) => res.json());
   }
   
-  // Obter lista de Pokémon
+  // get list of all pokemons
   export function getAllPokemon(url) {
     return fetch(url).then((res) => res.json());
   }
